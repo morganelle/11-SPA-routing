@@ -7,10 +7,9 @@
   // Also be sure to hide all the main section elements, and reveal the #articles section:
   articleController.init = function() {
     console.log('article controller running');
+    Article.fetchAll(articleView.initIndexPage);
     $('#articles').show();
     $('#about').hide();
-    // $('#articles').text('Welcome to articles page');
-    // $('#about').empty();
   }
 
   module.articleController = articleController;
