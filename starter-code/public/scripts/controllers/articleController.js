@@ -8,8 +8,7 @@
   articleController.init = function() {
     console.log('article controller running');
     Article.fetchAll(articleView.initIndexPage);
-    $('#articles').show();
-    $('#about').hide();
+    $('#article').show().siblings().hide();
   }
 
   module.articleController = articleController;
